@@ -1,19 +1,10 @@
-/**
- * Copyright (c) 2017-present, Liu Jinyong
- * All rights reserved.
- *
- * https://github.com/huanxsd/MeiTuan  
- * @flow
- */
 
-//import liraries
 import React, { PureComponent } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
 import color from '../common/color'
-import { screen } from '../common/screen'
+import  screen  from '../common/screen'
 
-// create a component
 class Separator extends PureComponent {
     render() {
         return (
@@ -22,7 +13,6 @@ class Separator extends PureComponent {
     }
 }
 
-// define your styles
 const styles = StyleSheet.create({
     line: {
         width: screen.width,

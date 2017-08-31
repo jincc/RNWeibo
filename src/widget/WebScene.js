@@ -1,9 +1,7 @@
 
-//import liraries
 import React, { PureComponent } from 'react'
 import { View, Text, StyleSheet, WebView, InteractionManager } from 'react-native'
 
-// create a component
 class WebScene extends PureComponent {
 
     static navigationOptions = ({ navigation }) => ({
@@ -51,7 +49,6 @@ class WebScene extends PureComponent {
     }
 }
 
-// define your styles
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -63,5 +60,4 @@ const styles = StyleSheet.create({
     }
 });
 
-//make this component available to the app
 export default WebScene;

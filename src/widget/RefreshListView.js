@@ -1,16 +1,8 @@
-//
-//  Created by Liu Jinyong on 17/4/5.
-//  Copyright © 2016年 Liu Jinyong. All rights reserved.
-//
-//  Github:
-//  https://github.com/huanxsd/react-native-refresh-list-view
 
-//import liraries
 import React, { PureComponent } from 'react'
 import { View, Text, StyleSheet, RefreshControl, ListView, ActivityIndicator, TouchableOpacity } from 'react-native'
 import RefreshState from './RefreshState'
 
-// create a component
 class RefreshListView extends PureComponent {
     static propTypes = {
         onHeaderRefresh: React.PropTypes.func,

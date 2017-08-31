@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native'
 
 import color from '../common/color'
 
-// create a component
+
 class SpacingView extends PureComponent {
     render() {
         return (
@@ -14,7 +14,6 @@ class SpacingView extends PureComponent {
     }
 }
 
-// define your styles
 const styles = StyleSheet.create({
     container: {
         height: 14,
@@ -22,5 +21,4 @@ const styles = StyleSheet.create({
     },
 });
 
-//make this component available to the app
 export default SpacingView;

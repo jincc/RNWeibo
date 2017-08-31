@@ -1,20 +1,11 @@
-/**
- * Copyright (c) 2017-present, Liu Jinyong
- * All rights reserved.
- *
- * https://github.com/huanxsd/MeiTuan  
- * @flow
- */
 
-//import liraries
 import React, { PureComponent } from 'react'
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, Image ,Animated} from 'react-native'
 
-// create a component
 class NavigationItem extends PureComponent {
     render() {
         let icon = this.props.icon &&
-            <Image style={[styles.icon, this.props.iconStyle]} source={this.props.icon} />
+            <Animated.Image style={[styles.icon, this.props.iconStyle]} source={this.props.icon} />
 
         let title = this.props.title &&
             <Text style={[styles.title, this.props.titleStyle]}>{this.props.title}</Text>
@@ -27,7 +18,6 @@ class NavigationItem extends PureComponent {
     }
 }
 
-// define your styles
 const styles = StyleSheet.create({
     container: {
         flex:1,
